@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+</head>
+<body>
+
+Enter Birthday year: <input type="number" id="year">
+<button onclick="calc()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+    function calc() {
+        let year = document.getElementById("year").value;
+        let age = 2026 - Number(year);
+
+        document.getElementById("result").innerHTML = "Age: " + age;
+    }
+</script>
+
+</body>
+</html>
